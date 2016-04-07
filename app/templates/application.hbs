@@ -1,3 +1,12 @@
 <h2 id="title">Welcome to Ember</h2>
 
+
 {{outlet}}
+
+{{#each model as |book|}}
+	Title: {{book.title}}<br>
+	Author: {{book.author}}<br>
+	Date: {{book.year}}<br>
+{{/each}}
+
+
